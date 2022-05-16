@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sounds of birds</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<div class="keys">
+			<div data-key="66" class="key">
+				<kbd>B</kbd>
+				<span class="sound">bullfinch</span>
+				<!-- bullfinch снегирь -->
+			</div>
+			<div data-key="67" class="key">
+				<kbd>C</kbd>
+				<span class="sound">crow</span>
+				<!-- crow ворон -->
+			</div>
+			<div data-key="69" class="key">
+				<kbd>E</kbd>
+				<span class="sound">golden_eagle</span>
+				<!-- golden eagle беркут -->
+			</div>
+			<div data-key="70" class="key">
+				<kbd>F</kbd>
+				<span class="sound">finch</span>
+				<!-- finch зяблик -->
+			</div>
+			<div data-key="71" class="key">
+				<kbd>G</kbd>
+				<span class="sound">goose</span>
+				<!-- goose гусь -->
+			</div>
+			<div data-key="74" class="key">
+				<kbd>J</kbd>
+				<span class="sound">jack-snipe</span>
+				<!-- jack-snipe бекас -->
+			</div>
+			<div data-key="75" class="key">
+				<kbd>K</kbd>
+				<span class="sound">kestrel</span>
+				<!-- kestrel пустельга -->
+			</div>
+			<div data-key="77" class="key">
+				<kbd>M</kbd>
+				<span class="sound">magpie</span>
+				<!-- magpie сорока -->
+			</div>
+			<div data-key="78" class="key">
+				<kbd>N</kbd>
+				<span class="sound">nightingale</span>
+				<!-- nightingale соловей -->
+			</div>
+			<div data-key="79" class="key">
+				<kbd>O</kbd>
+				<span class="sound">oriole</span>
+				<!-- oriole иволга -->
+			</div>
+			<div data-key="81" class="key">
+				<kbd>Q</kbd>
+				<span class="sound">quail</span>
+				<!-- quail перепел -->
+			</div>
+			<div data-key="82" class="key">
+				<kbd>R</kbd>
+				<span class="sound">rook</span>
+				<!-- rook грач -->
+			</div>
+			<div data-key="83" class="key">
+				<kbd>S</kbd>
+				<span class="sound">sparrow</span>
+				<!-- sparrow воробей -->
+			</div>
+			<div data-key="84" class="key">
+				<kbd>T</kbd>
+				<span class="sound">titmouse</span>
+				<!-- titmouse синица -->
+			</div>
+			<div data-key="87" class="key">
+				<kbd>W</kbd>
+				<span class="sound">wagtail</span>
+				<!-- wagtail - трясогузка -->
+			</div>
+		</div>
+
+		<audio data-key="66" src="./audio/bullfinch.mp3"></audio>
+		<audio data-key="67" src="./audio/crow.mp3"></audio>
+		<audio data-key="69" src="./audio/golden_eagle.mp3"></audio>
+		<audio data-key="70" src="./audio/finch.mp3"></audio>
+		<audio data-key="71" src="./audio/goose.mp3"></audio>
+		<audio data-key="74" src="./audio/jack-snipe.mp3"></audio>
+		<audio data-key="75" src="./audio/kestrel.mp3"></audio>
+		<audio data-key="77" src="./audio/magpie.mp3"></audio>
+		<audio data-key="78" src="./audio/nightingale.mp3"></audio>
+		<audio data-key="79" src="./audio/oriole.mp3"></audio>
+		<audio data-key="81" src="./audio/quail.mp3"></audio>
+		<audio data-key="82" src="./audio/rook.mp3"></audio>
+		<audio data-key="83" src="./audio/sparrow.mp3"></audio>
+		<audio data-key="84" src="./audio/titmouse.mp3"></audio>
+		<audio data-key="87" src="./audio/wagtail.mp3"></audio>
+
+		<script>
+			window.addEventListener('keydown', e => {
+				const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+				const key = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+				if (!audio)
+					return ;
+				audio.currentTime = 0;
+				audio.play();
+			});
+			
+			const keys = document.querySelectorAll('.key');
+
+			function removeTransition(e) {
+				console.log(e);
+			}
+			
+			keys.forEach(key => {
+				key.addEventListener('transitioned', removeTransition);
+			})
+
+		</script>
+
+	</body>
+</html>
