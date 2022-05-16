@@ -8,8 +8,7 @@ function playSound(e) {
 	key.classList.add('playing');
 	image.classList.add('playing');
 	audio.currentTime = 0;
-	promise = new Promise(audio.play());
-	promise.then(removeTransition(key));
+	audio.play().then(e => e.target.classList.remove('playing'));
 }
 
 function removeTransition(e) {
