@@ -11,18 +11,22 @@ function playSound(e) {
 	audio.currentTime = 0;
 	audio.play();
 
-	let timeId = setTimeout((repeat) => {
-		if (repeat) {
-			return ;
-		}
-		key.classList.remove('playing');
-		image.classList.remove('playing');
+	let timeId = setInterval(() => {
+		audio.currentTime = 0;
+		audio.play();
 	}, audio.duration * 1000);
 
 	if (timeout.has(key)) {
-		clearTimeout(timeout.get(key));
+		clearInterval(timeout.get(key));
+		clearInterval(timeId);
 		timeout.delete(key);
+		audio.pause();
+		audio.currentTime = 0;
+		key.classList.remove('playing');
+		image.classList.remove('playing');
+		return ;
 	}
+
 	timeout.set(key, timeId);
 }
 
