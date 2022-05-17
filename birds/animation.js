@@ -8,17 +8,14 @@ function playSound(e) {
 	key.classList.add('playing');
 	image.classList.add('playing');
 	audio.currentTime = 0;
-	audio.play().then(e => e.target.classList.remove('playing'));
-}
-
-function removeTransition(e) {
-	// if (e.proportyName !== 'transition')
-	// 	return ;
-	e.target.classList.remove('playing');
+	audio.play();
+	setTimeout(() => {
+		key.classList.remove('playing');
+		image.classList.remove('playing');
+	}, audio.duration * 1000);
 }
 
 const keys = document.querySelectorAll('.key');
 const images = document.querySelectorAll('.image');
 
-// keys.forEach(key => key.addEventListener('transitioned', removeTransition));
 window.addEventListener('keydown', playSound);
