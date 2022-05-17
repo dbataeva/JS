@@ -8,7 +8,7 @@ function playSound(e) {
 	}
 	key.classList.add('playing');
 	image.classList.add('playing');
-	// audio.currentTime = 0;
+	audio.currentTime = 0;
 	audio.play();
 
 	let timeId = setTimeout((repeat) => {
