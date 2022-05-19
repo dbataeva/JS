@@ -1,0 +1,62 @@
+html {
+	background: url(https://i0.wp.com/flo-in.com/wp-content/uploads/2017/12/flow.jpg?fit=1920%2C1200&ssl=1);
+	background-size: cover;
+	font-family: 'helvetica neue';
+	text-align: center;
+	font-size: 10px;
+}
+
+body {
+	font-size: 2rem;
+	display: flex;
+	flex: 1;
+	min-height: 100vh;
+	align-items: center;
+}
+
+.clock {
+	width: 30rem;
+	height: 30rem;
+	border: 20px solid whitesmoke;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 2rem;
+	box-shadow: 
+		0 0 0px 4px rgba(0, 0, 0, 0.1),
+		inset 0 0 0 3px #EFEFEF,
+		inset 0 0 10px black,
+		0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.clock-face {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-3px);
+}
+
+.hand {
+	height: 6px;
+	background: black;
+	position: fixed;
+	top: 50%;
+	transform-origin: 100%;
+	transition: .5s;
+	transition-timing-function:cubic-bezier(0.68, 0, 0.265, 1.125);
+}
+
+.hour {
+	width: 30%;
+	left: 20%;
+}
+
+.minute {
+	left: 10%;
+	width: 40%;
+}
+
+.second {
+	width: 50%;
+}
