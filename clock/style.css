@@ -39,7 +39,7 @@ body {
 
 .hand {
 	height: 6px;
-	background: black;
+	background: white;
 	position: fixed;
 	top: 50%;
 	transform-origin: 100%;
