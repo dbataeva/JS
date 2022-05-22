@@ -1,0 +1,37 @@
+:root {
+	--base: burlywood;
+	--blur: 10px;
+	--spacing: 10px;
+}
+
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+	max-width: 100vh;
+	max-height: 100vh;
+}
+
+body {
+	text-align: center;
+}
+
+body {
+	background: cadetblue;
+	color: white;
+	font-family: 'helvetica neue' sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+a {
+	color: var(--base);
+}
+
+input {
+	width: 100px;
+}

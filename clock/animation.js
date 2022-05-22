@@ -5,7 +5,7 @@ function rotateHands() {
 	minDegree += 0.1;
 	minute.style.transform = `rotate(${minDegree}deg)`;
 
-	hourDegree += 0.08333333;
+	hourDegree += 0.008333333;
 	hour.style.transform = `rotate(${hourDegree}deg)`;
 }
 
