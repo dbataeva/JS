@@ -8,7 +8,7 @@ const inventors = [
 	{first: "Max", last: "Planc", year: 1858, passed: 1947},
 ];
 
-const people = ["Beck, Glenn",			"Backer, Caarl",
+const people = ["Beck, Glenn",			"Backer, Carl",
 				"Beckett, Samuel",		"Beddoes, Mick",
 				"Beecher, Henry",		"Beethoven, Ludwig",
 				"Begin, Menachem",		"Belloc, Hilarie",
@@ -37,4 +37,63 @@ const fifteen = inventors.filter(inventor => {
 	return (false);
 });
 
-console.log(fifteen);
+console.table(fifteen);
+
+const firstAndLastInventoryNames = inventors.map(inventor => {
+	return (inventor.first + ' ' + inventor.last);
+});
+
+console.log(firstAndLastInventoryNames);
+
+inventors.sort((a, b) => {
+	return (a.year - b.year);
+});
+
+console.table(inventors);
+
+const years = inventors.reduce((sum, inventor) => {
+	return (sum + (inventor.passed - inventor.year));
+}, 0);
+
+console.log(years);
+
+inventors.sort((a, b) => {
+	return ((a.passed - a.year) - (b.passed - b.year));
+});
+
+console.table(inventors);
+
+const category = document.querySelector(".mw-category");
+const links = Array.from(category.querySelectorAll('a'));
+const de = links.map(link => {
+	return (link.outerText);
+}).filter(name => {
+	return name.includes("de");
+});
+
+console.table(de);
+
+people.sort((a, b) => {
+	let lastA = a.slice(0, a.search(','));
+	let lastB = b.slice(0, b.search(','));
+
+	return (lastA > lastB ? 1 : -1);
+});
+
+console.table(people);
+
+const data = ["car", "car", "truck", "truck", "bike", "walk", "car", "van",
+			"bike", "walk", "van", "car", "truck"];
+
+const sumOfInstances = data.reduce((obj, elem) => {
+	if (obj[elem]) {
+		++obj[elem];
+	} else {
+		obj[elem] = 1;
+	}
+	return (obj);
+}, {});
+
+console.log(sumOfInstances);
+
+
