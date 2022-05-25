@@ -47,13 +47,13 @@ body {
 }
 
 .panel2 {
-	background-image: url(./images/wolf2.jpeg);
-	background-position: 64%;
+	background-image: url(./images/wolf5.jpeg);
+	background-position: 73%;
 }
 
 .panel3 {
-	background-image: url(https://oir.mobi/uploads/posts/2021-04/1619728642_50-oir_mobi-p-dikii-volk-zhivotnie-krasivo-foto-60.jpg);
-	background-position: 25%;
+	background-image: url(./images/wolf2.jpeg);
+	background-position: 64%;
 }
 
 .panel4 {
@@ -62,23 +62,23 @@ body {
 }
 
 .panel5 {
-	background-image: url(./images/wolf5.jpeg);
-	background-position: 73%;
-}
-
-.panel6 {
 	background-image: url(./images/wolf6.jpeg);
 	background-position: 56%;
 }
 
+.panel6 {
+	background-image: url(./images/wolf8.jpeg);
+	background-position: 52%;
+}
+
 .panel7 {
-	background-image: url(./images/wolf7.jpeg);
-	background-position: 51%;
+	background-image: url(https://oir.mobi/uploads/posts/2021-04/1619728642_50-oir_mobi-p-dikii-volk-zhivotnie-krasivo-foto-60.jpg);
+	background-position: 23%;
 }
 
 .panel8 {
-	background-image: url(./images/wolf8.jpeg);
-	background-position: 50%;
+	background-image: url(./images/wolf7.jpeg);
+	background-position: 51%;
 }
 
 .panel > * {
@@ -95,9 +95,15 @@ body {
 
 .panel > *:last-child { transform: translateY(100%); }
 
-.panel.open-active > *:first-child { transform: translateY(0); }
+.panel.open-active > *:first-child {
+	transform: translateY(0);
+	transition-delay: 0.5s;
+}
 
-.panel.panel.open-active > *:last-child { transform: translateY(0);}
+.panel.panel.open-active > *:last-child {
+	transform: translateY(0);
+	transition-delay: 0.5s;
+}
 
 .panel p {
 	text-transform: uppercase;
@@ -106,10 +112,10 @@ body {
 	text-shadow: 0 0 4px rgba(0 0 0 0.72), 0 0 14px rgba(0 0 0 0.42);
 	font-size: 2em;
 }
-/* 
+
 .panel p:nth-child(p) {
 	font-size: 4em;
-} */
+}
 
 .panel.open {
 	flex: 5;
