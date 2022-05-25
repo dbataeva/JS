@@ -1,14 +1,31 @@
+function removeOpenFromOtherPanel() {
+	panels.forEach(panel => {
+		if (panel.classList.contains('open')) {
+			panel.classList.remove('open');
+			panel.classList.remove('open-active');
+		}
+	})
+	return ;
+}
+
 function showPicture(event) {
-	const mouseWidth = event.clientX;
-	const windowWidth = window.innerWidth;
-	
-	for (let i = 0; i < panels.length; ++i) {
-		
+	let mouseWidth = event.clientX;
+	let i = 0;
+
+	for (; i < panels.length; ++i) {
+		mouseWidth -= panels[i].clientWidth;
+		if (mouseWidth <= 0) {
+			break;
+		}
 	}
+	if (!panels[i].classList.contains('open')) {
+		removeOpenFromOtherPanel();
+		panels[i].classList.add('open');
+		panels[i].classList.add('open-active');
+	}
+	return ;
 }
 
 window.addEventListener('mousemove', showPicture);
 
 let panels = Array.from(document.querySelectorAll(".panel"));
-
-console.log(panels[2].clientWidth);
