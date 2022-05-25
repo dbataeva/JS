@@ -27,5 +27,7 @@ function showPicture(event) {
 }
 
 window.addEventListener('mousemove', showPicture);
+window.addEventListener('mouseout', removeOpenFromOtherPanel);
 
 let panels = Array.from(document.querySelectorAll(".panel"));
+
