@@ -113,16 +113,7 @@ body {
 	font-size: 2em;
 }
 
-.panel p:nth-child(p) {
-	font-size: 4em;
-}
-
 .panel.open {
 	flex: 5;
 	font-size: 40px;
-}
-
-.cta {
-	color: white;
-	text-decoration: none;
 }
