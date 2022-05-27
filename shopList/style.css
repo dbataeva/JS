@@ -1,0 +1,48 @@
+html {
+	background: url(https://www.shoppingschool.ru/netcat_files/userfiles/Articles/2019/KAPSULY/05.jpg) top center;
+	background-size: contain;
+	font-family: 'El Messiri';
+	font-size: 2.5vh;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	min-height: 85vh;
+	height: auto;
+	min-width: 85vw;
+	width: auto;
+	color: #11110f;
+	padding-top: 3vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 5vh;
+}
+
+.item {
+	display: flex;
+	background-color: rgba(231, 232, 227, 0.35);
+	border-radius: 1vh;
+	border-top: 1px solid #2E3034;
+	min-width: 50vw;
+	width: auto;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+p {
+	margin: 0.3em;
+	
+}
+
+input {
+	margin: 1.3em;
+}
+
+.inbox {
+	background-color: rgba(46, 48, 52, 0.35);
+	border: 8px double #2E3034;
+	border-radius: 0.5vw;
+}
