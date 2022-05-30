@@ -1,11 +1,20 @@
-function hidePicture() {
-	this.classList.remove('open-active');
-	this.classList.remove('open');
+function showPictureOnClick() {
+	if (this.classList.contains('open')) {
+		this.classList.remove('open-active');
+		this.classList.remove('open');
 
-	return ;
-}
+		return ;
+	}
 
-function showPicture(event) {
+	panels.forEach(panel => {
+		if (panel.classList.contains('open')) {
+			panel.classList.remove('open-active');
+			panel.classList.remove('open');
+		}
+
+		return ;
+	})
+
 	this.classList.add('open');
 	this.classList.add('open-active');
 
@@ -15,8 +24,7 @@ function showPicture(event) {
 let panels = Array.from(document.querySelectorAll(".panel"));
 
 panels.forEach(panel => {
-	panel.addEventListener('mouseover', showPicture);
-	panel.addEventListener('mouseout', hidePicture);
+	panel.addEventListener('click', showPictureOnClick);
 
 	return ;
 });

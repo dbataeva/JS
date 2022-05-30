@@ -47,7 +47,8 @@ li {
 	background-color: transparent;
 	outline: none;
 	transition: 0.3s;
-	height: 4vh;
+	min-height: 4vh;
+	height: fit-content;
 	font-size: 2.5vh;
 	margin-top: 3vh;
 	text-align: center;

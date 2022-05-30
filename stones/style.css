@@ -8,8 +8,8 @@ img {
 	padding: var(--spacing);
 	background: var(--base);
 	filter: blur(var(--blur));
-	max-width: 100vh;
-	max-height: 100vh;
+	max-width: 50vw;
+	max-height: 50vh;
 }
 
 body {
@@ -21,11 +21,11 @@ body {
 	color: white;
 	font-family: 'helvetica neue' sans-serif;
 	font-weight: 100;
-	font-size: 50px;
+	font-size: 2.5vmax;
 }
 
 .controls {
-	margin-bottom: 50px;
+	margin-bottom: 5vmax;
 }
 
 a {
@@ -33,5 +33,5 @@ a {
 }
 
 input {
-	width: 100px;
+	width: 12vw;
 }

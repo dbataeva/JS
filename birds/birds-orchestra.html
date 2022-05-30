@@ -1,145 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Birds orchestra</title>
-		<link rel="stylesheet" href="./style.css">
-		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-	</head>
 
-	<body>
-		<div class="instruction">
-			<span>Press one of these keys on your keyboard to listen how birds sing</span>
+<head>
+	<meta charset="UTF-8">
+	<title>Sounds of birds</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="instruction">
+		<span>Press one of these keys on your keyboard or click on these bottoms or birds images to listen how birds
+			sing</span>
+	</div>
+
+	<div class="keys">
+		<div data-key="66" class="key">
+			<kbd>B</kbd>
+			<span class="sound">bullfinch</span><!-- снегирь -->
 		</div>
-
-		<div class="keys">
-			<div data-key="66" class="key">
-				<kbd>B</kbd>
-				<span class="sound">bullfinch</span><!-- снегирь -->
-			</div>
-			<div data-key="67" class="key">
-				<kbd>C</kbd>
-				<span class="sound">crow</span><!-- ворон -->
-			</div>
-			<div data-key="69" class="key">
-				<kbd>E</kbd>
-				<span class="sound">golden_eagle</span><!-- беркут -->
-			</div>
-			<div data-key="70" class="key">
-				<kbd>F</kbd>
-				<span class="sound">finch</span><!-- зяблик -->
-			</div>
-			<div data-key="71" class="key">
-				<kbd>G</kbd>
-				<span class="sound">goose</span><!-- гусь -->
-			</div>
-			<div data-key="74" class="key">
-				<kbd>J</kbd>
-				<span class="sound">jack-snipe</span><!-- бекас -->
-			</div>
-			<div data-key="75" class="key">
-				<kbd>K</kbd>
-				<span class="sound">kestrel</span><!-- пустельга -->
-			</div>
-			<div data-key="77" class="key">
-				<kbd>M</kbd>
-				<span class="sound">magpie</span><!-- сорока -->
-			</div>
-			<div data-key="78" class="key">
-				<kbd>N</kbd>
-				<span class="sound">nightingale</span><!-- соловей -->
-			</div>
-			<div data-key="79" class="key">
-				<kbd>O</kbd>
-				<span class="sound">oriole</span><!-- иволга -->
-			</div>
-			<div data-key="81" class="key">
-				<kbd>Q</kbd>
-				<span class="sound">quail</span><!-- перепел -->
-			</div>
-			<div data-key="82" class="key">
-				<kbd>R</kbd>
-				<span class="sound">rook</span><!-- грач -->
-			</div>
-			<div data-key="83" class="key">
-				<kbd>S</kbd>
-				<span class="sound">sparrow</span><!-- воробей -->
-			</div>
-			<div data-key="84" class="key">
-				<kbd>T</kbd>
-				<span class="sound">titmouse</span><!-- синица -->
-			</div>
-			<div data-key="87" class="key">
-				<kbd>W</kbd>
-				<span class="sound">wagtail</span><!-- трясогузка -->
-			</div>
+		<div data-key="67" class="key">
+			<kbd>C</kbd>
+			<span class="sound">crow</span><!-- ворон -->
 		</div>
-
-		<div class="images">
-			<div data-image="66" class="image">
-				<img src = "./img/bullfinch.png" width="110px" height="110px">
-			</div><!-- cнегирь -->
-			<div data-image="67" class="image">
-				<img src = "./img/crow.png" width="110px" height="110px">
-			</div><!-- ворон -->
-			<div data-image="69" class="image">
-				<img src = "./img/golden-eagle.png" width="110px" height="110px">
-			</div><!-- беркут -->
-			<div data-image="70" class="image">
-				<img src = "./img/finch.png" width="110px" height="110px">
-			</div><!-- зяблик -->
-			<div data-image="71" class="image">
-				<img src = "./img/goose.png" width="110px" height="110px">
-			</div><!-- гусь -->
-			<div data-image="74" class="image">
-				<img src = "./img/jack-snipe.png" width="110px" height="110px">
-			</div><!-- бекас -->
-			<div data-image="75" class="image">
-				<img src = "./img/kestrel.png" width="110px" height="110px">
-			</div><!-- пустельга -->
-			<div data-image="77" class="image">
-				<img src = "./img/magpie.png" width="110px" height="110px">
-			</div><!-- сорока -->
-			<div data-image="78" class="image">
-				<img src = "./img/nightingale.png" width="110px" height="110px">
-			</div> <!-- соловей -->
-			<div data-image="79" class="image">
-				<img src = "./img/oriole.png" width="110px" height="110px">
-			</div><!-- иволга -->
-			<div data-image="81" class="image">
-				<img src = "./img/quail.png" width="110px" height="110px">
-			</div><!-- перепел -->
-			<div data-image="82" class="image">
-				<img src = "./img/rook.png" width="110px" height="110px">
-			</div><!-- rook грач -->
-			<div data-image="83" class="image">
-				<img src = "./img/sparrow.png" width="110px" height="110px">
-			</div><!-- воробей -->
-			<div data-image="84" class="image">
-				<img src = "./img/titmouse.png" width="110px" height="110px">
-			</div><!-- синица -->
-			<div data-image="87" class="image">
-				<img src = "./img/wagtail.png" width="110px" height="110px">
-			</div><!-- трясогузка -->
+		<div data-key="69" class="key">
+			<kbd>E</kbd>
+			<span class="sound">golden eagle</span><!-- беркут -->
 		</div>
+		<div data-key="70" class="key">
+			<kbd>F</kbd>
+			<span class="sound">finch</span><!-- зяблик -->
+		</div>
+		<div data-key="71" class="key">
+			<kbd>G</kbd>
+			<span class="sound">goose</span><!-- гусь -->
+		</div>
+		<div data-key="74" class="key">
+			<kbd>J</kbd>
+			<span class="sound">jack-snipe</span><!-- бекас -->
+		</div>
+		<div data-key="75" class="key">
+			<kbd>K</kbd>
+			<span class="sound">kestrel</span><!-- пустельга -->
+		</div>
+		<div data-key="77" class="key">
+			<kbd>M</kbd>
+			<span class="sound">magpie</span><!-- сорока -->
+		</div>
+		<div data-key="78" class="key">
+			<kbd>N</kbd>
+			<span class="sound">nightingale</span><!-- соловей -->
+		</div>
+		<div data-key="79" class="key">
+			<kbd>O</kbd>
+			<span class="sound">oriole</span><!-- иволга -->
+		</div>
+		<div data-key="81" class="key">
+			<kbd>Q</kbd>
+			<span class="sound">quail</span><!-- перепел -->
+		</div>
+		<div data-key="82" class="key">
+			<kbd>R</kbd>
+			<span class="sound">rook</span><!-- грач -->
+		</div>
+		<div data-key="83" class="key">
+			<kbd>S</kbd>
+			<span class="sound">sparrow</span><!-- воробей -->
+		</div>
+		<div data-key="84" class="key">
+			<kbd>T</kbd>
+			<span class="sound">titmouse</span><!-- синица -->
+		</div>
+		<div data-key="87" class="key">
+			<kbd>W</kbd>
+			<span class="sound">wagtail</span><!-- трясогузка -->
+		</div>
+	</div>
 
-		<audio data-key="66" src="./audio/bullfinch.mp3"></audio>
-		<audio data-key="67" src="./audio/crow.mp3"></audio>
-		<audio data-key="69" src="./audio/golden_eagle.mp3"></audio>
-		<audio data-key="70" src="./audio/finch.mp3"></audio>
-		<audio data-key="71" src="./audio/goose.mp3"></audio>
-		<audio data-key="74" src="./audio/jack-snipe.mp3"></audio>
-		<audio data-key="75" src="./audio/kestrel.mp3"></audio>
-		<audio data-key="77" src="./audio/magpie.mp3"></audio>
-		<audio data-key="78" src="./audio/nightingale.mp3"></audio>
-		<audio data-key="79" src="./audio/oriole.mp3"></audio>
-		<audio data-key="81" src="./audio/quail.mp3"></audio>
-		<audio data-key="82" src="./audio/rook.mp3"></audio>
-		<audio data-key="83" src="./audio/sparrow.mp3"></audio>
-		<audio data-key="84" src="./audio/titmouse.mp3"></audio>
-		<audio data-key="87" src="./audio/wagtail.mp3"></audio>
+	<div class="images">
+		<div data-image="66" class="image image66">
+		</div><!-- cнегирь -->
+		<div data-image="67" class="image image67">
+		</div><!-- ворон -->
+		<div data-image="69" class="image image69">
+		</div><!-- беркут -->
+		<div data-image="70" class="image image70">
+		</div><!-- зяблик -->
+		<div data-image="71" class="image image71">
+		</div><!-- гусь -->
+		<div data-image="74" class="image image74">
+		</div><!-- бекас -->
+		<div data-image="75" class="image image75">
+		</div><!-- пустельга -->
+		<div data-image="77" class="image image77">
+		</div><!-- сорока -->
+		<div data-image="78" class="image image78">
+		</div> <!-- соловей -->
+		<div data-image="79" class="image image79">
+		</div><!-- иволга -->
+		<div data-image="81" class="image image81">
+		</div><!-- перепел -->
+		<div data-image="82" class="image image82">
+		</div><!-- rook грач -->
+		<div data-image="83" class="image image83">
+		</div><!-- воробей -->
+		<div data-image="84" class="image image84">
+		</div><!-- синица -->
+		<div data-image="87" class="image image87">
+		</div><!-- трясогузка -->
+	</div>
 
-		<script src = "stops-when-user-press-key-again.js"></script>
+	<audio data-key="66" src="./audio/bullfinch.mp3"></audio>
+	<audio data-key="67" src="./audio/crow.mp3"></audio>
+	<audio data-key="69" src="./audio/golden_eagle.mp3"></audio>
+	<audio data-key="70" src="./audio/finch.mp3"></audio>
+	<audio data-key="71" src="./audio/goose.mp3"></audio>
+	<audio data-key="74" src="./audio/jack-snipe.mp3"></audio>
+	<audio data-key="75" src="./audio/kestrel.mp3"></audio>
+	<audio data-key="77" src="./audio/magpie.mp3"></audio>
+	<audio data-key="78" src="./audio/nightingale.mp3"></audio>
+	<audio data-key="79" src="./audio/oriole.mp3"></audio>
+	<audio data-key="81" src="./audio/quail.mp3"></audio>
+	<audio data-key="82" src="./audio/rook.mp3"></audio>
+	<audio data-key="83" src="./audio/sparrow.mp3"></audio>
+	<audio data-key="84" src="./audio/titmouse.mp3"></audio>
+	<audio data-key="87" src="./audio/wagtail.mp3"></audio>
 
-	</body>
+	<script src="stops-when-user-press-key-again.js"></script>
+
+</body>
+
 </html>

@@ -1,13 +1,19 @@
 html {
-	font-size: 10px;
+	font-size: 1vh;
 	background: url(./img/background.jpeg) bottom center;
 	background-size: cover;
+	font-display: center;
 }
 
 body, html {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+}
+
+span {
+	display: block;
+	text-align: center;
 }
 
 .instruction {
@@ -33,9 +39,9 @@ body, html {
 	border: .4rem solid black;
 	border-radius: 5px;
 	margin: 1rem;
-	padding: 1rem .5rem;
-	width: 110px;
-	height: 110px;
+	padding: .5rem .5rem;
+	width: 13.5ex;
+	height: 13.5ex;
 	background: rgba(255, 255, 255, 0.2);
 }
 
@@ -53,8 +59,10 @@ body, html {
 	border-radius: 5px;
 	margin: 1rem;
 	font-size: 1.5rem;
+	font-display: center;
 	padding: 1rem .5rem;
-	width: 110px;
+	width: 9ex;
+	height: 9ex;
 	text-align: center;
 	color: white;
 	background: rgba(0, 0, 0, 0.4);
@@ -70,4 +78,92 @@ body, html {
 kbd {
 	display: block;
 	font-size: 4rem;
+}
+
+.image66 {
+	background-image: url(./img/bullfinch.png);
+	background-size: 99%;
+	background-position: center;
+}
+
+.image67 {
+	background-image: url(./img/crow.png);
+	background-size: 99%;
+	background-position: center;
+}
+
+.image69 {
+	background-image: url(./img/golden-eagle.png);
+	background-size: 107%;
+	background-position: center;
+}
+
+.image70 {
+	background-image: url(./img/finch.png);
+	background-size: 99.9%;
+	background-position: right;
+}
+
+.image71 {
+	background-image: url(./img/goose.png);
+	background-size: 98%;
+	background-position: bottom;
+}
+
+.image74 {
+	background-image: url(./img/jack-snipe.png);
+	background-size: 99%;
+}
+
+.image75 {
+	background-image: url(./img/kestrel.png);
+	background-size: 99.9%;
+	background-position: bottom;
+}
+
+.image77 {
+	background-image: url(./img/magpie.png);
+	background-size: 99.9%;
+}
+
+.image78 {
+	background-image: url(./img/nightingale.png);
+	background-size: 99.9%;
+	background-position: bottom;
+}
+
+.image79 {
+	background-image: url(./img/oriole.png);
+	background-size: 99.9%;
+	background-position: center;
+}
+
+.image81 {
+	background-image: url(./img/quail.png);
+	background-size: 99.9%;
+	background-position: center;
+}
+
+.image82 {
+	background-image: url(./img/rook.png);
+	background-size: 99.9%;
+	background-position: center;
+}
+
+.image83 {
+	background-image: url(./img/sparrow.png);
+	background-size: 99%;
+	background-position: bottom;
+}
+
+.image84 {
+	background-image: url(./img/titmouse.png);
+	background-size: 99.9%;
+	background-position: right;
+}
+
+.image87 {
+	background-image: url(./img/wagtail.png);
+	background-size: 99.9%;
+		background-position: center;
 }

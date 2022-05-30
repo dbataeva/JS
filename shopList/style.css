@@ -2,7 +2,7 @@ html {
 	background: url(https://www.shoppingschool.ru/netcat_files/userfiles/Articles/2019/KAPSULY/05.jpg) top center;
 	background-size: contain;
 	font-family: 'El Messiri';
-	font-size: 2.5vh;
+	font-size: 1.5vmax;
 }
 
 body {
@@ -33,16 +33,27 @@ body {
 }
 
 p {
-	margin: 0.3em;
-	
+	align-items: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;/* Chrome/Safari/Opera */
+	-khtml-user-select: none;/* Konqueror */
+	-moz-user-select: none;/* Firefox */
+	-ms-user-select: none;/* Internet Explorer/Edge */
+	user-select: none;
 }
 
 input {
-	margin: 1.3em;
+	transform: scale(1.5);
+	/* opacity: 2; */
+	align-self: center;
+	/* width: 50px;
+	height: 50px; */
+	/* width: 5rem;
+	/* height: 5rem; */
 }
 
 .inbox {
 	background-color: rgba(46, 48, 52, 0.35);
 	border: 8px double #2E3034;
-	border-radius: 0.5vw;
+	border-radius: 1vw;
 }
